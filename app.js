@@ -65,3 +65,30 @@ function subtractNumbers(num1, num2){
 
 
 console.log(calculator(5,77, addNumbers, subtractNumbers));
+
+// make a super hero function
+function batMan(superPowerOne, superPowerTwo){
+    let allSuperPowers =  superPowerOne() + ' and ' + superPowerTwo();
+
+    return allSuperPowers
+}
+
+function superBat(){
+    let power = 'I can beat any super hero'
+    
+    return power;
+}
+
+function superMind(){
+    let mind = 'I am master tactician';
+    
+    return mind;
+}
+
+console.log(batMan(superBat, superMind));
+
+
+
+// take in 2 call backs 
+// return a strung in each one of the call backs describing the super power
+// each call back function will return a messge
