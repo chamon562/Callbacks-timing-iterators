@@ -102,15 +102,60 @@ function blastOff(){
 
 console.log('Blast OFF!!!!')
 
-setTimeout(blastOff, 5000); //5000 is 5 sec in millisec
+// setTimeout(blastOff, 5000); //5000 is 5 sec in millisec
 
 //make functino that prints  your name 
 //setTimeout and pass in function and a time.
-function printName(name){
-    console.log(name);
-}
-let myNameTwo = 'Channee';
-setTimeout(function(){
-    printName(myNmeTwo);
-}, 5000); //printed immediately name and 5 seconds later ran blaset
+// function printName(name){
+//     console.log(name);
+// }
+
+//setTimeout
+// let myNameTwo = 'Channee';
+// setTimeout(function(){
+//     printName(myNmeTwo);
+// }, 5000); //printed immediately name and 5 seconds later ran blaset
 //inside you can make a function
+
+//iterators 
+// forEach
+
+const collectables = ['Bomag', 'CMI Corp', 'Wrtgen', 'Catepiller'];
+//for each does simmilar to for loop let i=0....
+collectables.forEach(function(element){
+    console.log(element);
+})
+
+//each element will print to screen
+
+collectables.forEach(element => {
+    if (element.length > 6 {
+        console.log(element);
+    }
+});
+
+//map it goes through every element and makes new array
+// of whatever you deside to change in each element
+
+const someNumebrs = [23,65,347,34];
+const addFive = someNumbers.map(element => {
+    return element + 5;
+})
+
+// will set up hiidden [array] [29, 70, 352, 39]
+// .map returns an array
+// you have to return something  element plus 5
+console.log(addFive);
+
+
+// filter does similar structure
+// return only what you filter out
+
+const filteredNumbers = someNumbers.filter(element => {
+    //condition
+    if (element > 50){
+        return element;
+    }
+});
+console.log(filteredNumbers)
+//going to put this in array 65 cuz greater than 50, 347
