@@ -19,7 +19,7 @@ console.log(greeting(myName, anotherGreeting)); //return hello, my name is chann
 //Exercice
 // print elements in array and use call back to print again
 function printArray(array, callback) {
-    for(i =0; i < array.length; i++){
+    for(let i =0; i < array.length; i++){
         let numbers = array[i] //grab each number 1,2 ...
         
         console.log(number); //1
@@ -87,8 +87,44 @@ function superMind(){
 
 console.log(batMan(superBat, superMind));
 
-
-
 // take in 2 call backs 
 // return a strung in each one of the call backs describing the super power
 // each call back function will return a messge
+
+
+function blastOff(){
+    let num = 0; // set variable
+
+    // set up for loop
+    for(let i = 10; i>= num; i--){
+        console.log(i)// 10, 9, 8, 7
+}
+
+console.log('Blast OFF!!!!')
+
+setTimeout(blastOff, 5000); //5000 is 5 sec in millisec
+
+//make functino that prints  your name 
+//setTimeout and pass in function and a time.
+
+
+function call(name){
+    let sentence = 'my name is ' + name;
+
+    return sentence; 
+}
+
+
+function blastOff(){
+    let num = 0; 
+
+    
+    for(let i = 10; i>= num; i--){
+        console.log(i)
+}
+
+console.log('Tee OFF!!')
+
+setTimeout(blastOff, 5000); 
+let name = 'Channe'
+console.log(greeting(Name));
