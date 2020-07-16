@@ -106,25 +106,11 @@ setTimeout(blastOff, 5000); //5000 is 5 sec in millisec
 
 //make functino that prints  your name 
 //setTimeout and pass in function and a time.
-
-
-function call(name){
-    let sentence = 'my name is ' + name;
-
-    return sentence; 
+function printName(name){
+    console.log(name);
 }
-
-
-function blastOff(){
-    let num = 0; 
-
-    
-    for(let i = 10; i>= num; i--){
-        console.log(i)
-}
-
-console.log('Tee OFF!!')
-
-setTimeout(blastOff, 5000); 
-let name = 'Channe'
-console.log(greeting(Name));
+let myNameTwo = 'Channee';
+setTimeout(function(){
+    printName(myNmeTwo);
+}, 5000); //printed immediately name and 5 seconds later ran blaset
+//inside you can make a function
