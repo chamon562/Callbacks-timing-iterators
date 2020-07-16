@@ -47,32 +47,20 @@ printArray(numbersArray, printArrayAgain);
 function calculator(num1, num2, callbackOne, callbackTwo){
 
     let result = callbackOne(num1, num2) + callbackTwo(num1, num2)
+    // will return 82 + -72 = 10
 
     return result;
 
 }
 
 function addNumbers(num1, num2){
-
-    for(i =0; i < array.length; i++){
-        let numbers = array[i]
-        
-        console.log(numbers); 
-    }
-    
-    callback(num1, num2);
-
+    let result = num1 + num2; 
+  return result; 
 }
 
 function subtractNumbers(num1, num2){
-    for(i =0; i < array.length; i--){
-        let numbers = array[i]
-        
-        console.log(numbers); 
-    }
-    
-    callback(num1, num2);
-
+    let result = num1 - num2;
+    return result;
 }
 
 
